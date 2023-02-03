@@ -69,7 +69,7 @@ for x in data:
 print ("=======================================================================================")
 ```
 ## Hasil Output 
-![gambar output](picture/praktikum4.PNG)
+![gambar output](picture/hasil-praktikum4.PNG)
 
 ## Penjelasan 
 
