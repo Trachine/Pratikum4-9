@@ -7,7 +7,7 @@
 | 2. | Tugas Praktium 4 | [penjelasan](#TugasPraktikum-4) | 
 
 ## TugasLatihan 4
-![gambar output](gambar/latihan4.PNG)
+![gambar output](picture/latihan4.PNG)
 
 ## Hasil Source Code
 ```python
@@ -16,6 +16,7 @@ data = [11,12,13,14,15]
 print ("menampilkan semua list: ", data[0:6])
 print ("element ke 3 : ", data[2])
 print ("element ke 2 sampai ke 4 : ", data[1:4])
+print ("element terakhir : ", data[4])
 #mengubah element list
 data[3] = 20
 print("mengubah element 4 : ", data)
@@ -25,8 +26,8 @@ print("════════════════════════�
 #menambahkan element
 dataa = [11,22,14]
 datab = [24,12,52]
-print("list a : ", dataa)
-print("list b : ", datab)
+print("list A : ", dataa)
+print("list B : ", datab)
 datab.append(99)
 print ("menambahkan list B nilai string : ", datab)
 datab.extend([60,70,80])
@@ -35,21 +36,21 @@ print ("mengabungkan list A dan B : " ,dataa + datab)
 print("══════════════════════════════════════")
 ```
 ## Hasil Output 
-![gambar output](gambar/Hasillatihan4.png)
+![gambar output](picture/hasil-latihan4.PNG)
 
 ## TugasPraktikum 4
-![gambar output](gambar/soalpraktikum4.PNG)
+![gambar output](picture/praktikum4.PNG)
 
 ## Hasil Source Code
 ```python
 #Membuat variable perulangan while
 data = []
 while True : 
-	nama	= input	("Nama 		:")
-	nim		= input ("NIM 		:")
-	tugas	= int(input("Nilai Tugas        :"))
-	uts 	= int(input("Nilai UTS 	:"))
-	uas 	= int(input("Nilai UAS 	:"))
+	nama	= input	("Nama           : ")
+	nim		= input ("NIM            : ")
+	tugas	= int(input("Nilai Tugas    : "))
+	uts 	= int(input("Nilai UTS      : "))
+	uas 	= int(input("Nilai UAS      : "))
 	nilaiakhir = float(tugas)*30/100+(uts)*35/100+(uas)*35/100 
 	data.append ([nama,nim,tugas,uts,uas,nilaiakhir])
 	lagi = input ("Tambah lagi (y/t)?")
@@ -58,14 +59,18 @@ while True :
 #prosess hasil dari lopping
 print ("========================|=======DATA MAHASISWA==========|==============================")
 print ("=======================================================================================")
-print ("| No |	 Nama 	| NIM 	| TUGAS | UTS 	|	 UAS 	|	 NILAI AKHIR 	|")
+print ("| No |	 Nama 	|  NIM 	| TUGAS |  UTS 	|     UAS 	|	 NILAI AKHIR 	|")
 print ("=======================================================================================")
 i=0
 for x in data:
 	i+=1
-	print ("|{6:2d}| {0:9s}| {1:6s}| {2:6d}|{3:4d} |	 {4:5d}	 | 	{5:13.2f} 	|"\
+	print ("|{6:3d} | {0:9s}|  {1:5s}|{2:4d}   |{3:5d}  |    {4:4d}	| 	{5:10.2f} 	|"\
 		.format (x[0][:9],x[1][:6],x[2],x[3],x[4],x[5],i))
+print ("=======================================================================================")
 ```
+## Hasil Output 
+![gambar output](picture/praktikum4.PNG)
+
 ## Penjelasan 
 
 
